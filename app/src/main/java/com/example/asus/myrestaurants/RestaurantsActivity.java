@@ -18,17 +18,18 @@ public class RestaurantsActivity extends AppCompatActivity {
     @Bind(R.id.listView) ListView mListView;
 
     private String[] restaurants = new String[] {"Mi Mero Mole", "Mother's Bistro", "Life of Pie", "Screen Door", "Luc Lac", "Sweet Basil", "Slappy Cakes", "Equinox", "Miss Delta's", "Andina", "Lardo", "Portland City Grill", "Fat Head's Brewery", "Chipotle", "Subway"};
+    private String[] cuisines = new String[] {"Vegan Food", "Breakfast", "Fish Dish", "Scandinavian", "Coffee", "English Food", "Burgers", "Fast Food", "Noodle Soups", "Mexican", "BBQ", "Cuban", "Bar Food", "Breakfast", "Mexican" };
 
 
 
-     @Override
+    @Override
      protected void onCreate(Bundle savedInstanceState) {
          super.onCreate(savedInstanceState);
          setContentView(R.layout.activity_restaurants);
          ButterKnife.bind(this);
 
 
-         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, restaurants);
+         MyRestaurantsArrayAdapter adapter = new MyRestaurantsArrayAdapter(this, android.R.layout.simple_list_item_1, restaurants, cuisines);
          mListView.setAdapter(adapter);
 
          mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
