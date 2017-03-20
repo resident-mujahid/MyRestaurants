@@ -7,3 +7,12 @@
 /build
 /captures
 .externalNativeBuild
+/gradle.properties
+.project
+.settings/
+app/.classpath
+app/.project
+app/.settings/
+app/libs/
+javac-services.0.log
+javac-services.0.log.lck
