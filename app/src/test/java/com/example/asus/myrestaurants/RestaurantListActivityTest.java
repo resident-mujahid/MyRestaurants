@@ -4,6 +4,8 @@ package com.example.asus.myrestaurants;
 import android.os.Build;
 import android.widget.ListView;
 
+import com.example.asus.myrestaurants.ui.RestaurantListActivity;
+
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,14 +20,14 @@ import static junit.framework.Assert.assertNotNull;
 @RunWith(RobolectricGradleTestRunner.class)
 
 
-public class RestaurantsActivityTest {
-    private RestaurantsActivity activity;
+public class RestaurantListActivityTest {
+    private RestaurantListActivity activity;
     private ListView mRestaurantListView;
 
     @Before
     public void setup() {
-        activity = Robolectric.setupActivity(RestaurantsActivity.class);
-        mRestaurantListView = (ListView) activity.findViewById(R.id.listView);
+        activity = Robolectric.setupActivity(RestaurantListActivity.class);
+        mRestaurantListView = (ListView) activity.findViewById(R.id.recyclerView);
     }
 
     @Test
