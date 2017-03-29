@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "234602146305",
+    "firebase_url": "https://myrestaurants-52c82.firebaseio.com",
+    "project_id": "myrestaurants-52c82",
+    "storage_bucket": "myrestaurants-52c82.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234602146305:android:012525b3cc664a87",
+        "android_client_info": {
+          "package_name": "com.example.asus.myrestaurants"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234602146305-nijnjnomt40q5ge695mm5uctcaunt1db.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRYIRhjk2uM3ig5ayqGk5abkWSckJrvoI"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
